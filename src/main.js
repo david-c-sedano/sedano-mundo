@@ -61,7 +61,7 @@ modelLoader.load("/volcano-low-poly.glb", function(gltf) {
 	}
     });
     
-    outline.scale.setScalar(0.001015);
+    outline.scale.setScalar(0.001005);
     scene.add(outline);
     scene.add(island);
     
@@ -84,8 +84,8 @@ let angle = 0;
 function animate() {
     requestAnimationFrame(animate);
 
-    island.rotation.y += 0.005
-    outline.rotation.y += 0.005
+    island.rotation.y += 0.0025
+    outline.rotation.y += 0.0025
     
     renderer.render(scene, camera);
 }
